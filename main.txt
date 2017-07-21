@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define UP 72
+#define DOWN 80
+#define LEFT 75
+#define RIGHT 77
+/*declare button to control a snake*/
+
+void map()
+{
+    int i, j, k, l;
+    for(i=1; i<=24; i++){
+        printf("**");           /*print the first line of map*/
+    }
+    printf("*");
+    for(j=1; j<=24; j++){
+        printf("\n*");
+        for(k=1; k<=6; k++){
+            printf("\t");
+        }
+        printf("*");            /*print middle lines*/
+    }
+    printf("\n");
+    for(l=1; l<=24; l++){
+        printf("**");           /*print the last line */
+    }
+    printf("*");
+}
+int main()
+{
+    map();
+    return 0;
+}
+
+
+
